@@ -52,8 +52,20 @@ MonoBehaviour:
   - name: Boss
     clip: {fileID: 8300000, guid: 6d39316db765c89449958db05068490a, type: 3}
   SfxSounds:
-  - name: 
-    clip: {fileID: 0}
+  - name: Dialouge1
+    clip: {fileID: 8300000, guid: b9adeb8316706cb41bfcdd2820da719d, type: 3}
+  - name: Dialouge2
+    clip: {fileID: 8300000, guid: a737b0f730c0335428736a44d542d58a, type: 3}
+  - name: EXPGet
+    clip: {fileID: 8300000, guid: 3d8b1ab0c66da104aba05a43e55cf4a6, type: 3}
+  - name: SwordHit
+    clip: {fileID: 8300000, guid: f1a2dcd32d011c5449a225fc4d1e2742, type: 3}
+  - name: MobDeath
+    clip: {fileID: 8300000, guid: cb987cffbf4466448ae567a52b8c421a, type: 3}
+  - name: MobDeath2
+    clip: {fileID: 8300000, guid: 46f7badf049c9bf4a84a81c3800bde3b, type: 3}
+  - name: SwordMiss
+    clip: {fileID: 8300000, guid: b9ce9ae9b0227bb4a8efb504eebaf562, type: 3}
   musicSource: {fileID: 7629999126939412776}
   SfxSource: {fileID: 7629999126624848646}
 --- !u!1 &7629999126624848647
