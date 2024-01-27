@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4251fd6dda7bc6d4ea1475e986675d48, type: 3}
-  m_Name: New Dialogue
+  m_Name: Test Speech
   m_EditorClassIdentifier: 
-  dialogueLines:
-  - This is a test
+  lines:
+  - Test 1
   - Test 2
+  startIndex: 0
