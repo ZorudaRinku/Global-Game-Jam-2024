@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 5051954343888165517}
   - component: {fileID: 5296731250574022723}
   - component: {fileID: 8267041969957774454}
-  - component: {fileID: 5828463515620247661}
+  - component: {fileID: 9119358813421335222}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &5828463515620247661
+--- !u!114 &9119358813421335222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,11 +248,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6453964476866303300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6c6dd894db6594ab0d0d417b595d88, type: 3}
+  m_Script: {fileID: 11500000, guid: b4159a227878f7d459d816b25a638d85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: c57e3b580592de04485566e632662a46, type: 2}
-  textSpeed: 0.2
+  dialogue: {fileID: 11400000, guid: 5e6cff0d15bc9b943a05c1fe843022b7, type: 2}
+  textSpeed: 0.3
   dialogueBox: {fileID: 8182288332852587584}
   textComponent: {fileID: 8267041969957774454}
 --- !u!1 &8064998685810010793

@@ -5,17 +5,33 @@ using UnityEngine;
 public class NPCDialogue : MonoBehaviour
 {
     [SerializeField] DialogueAsset dialogue;
-    public dialogueManager managerObject;
+    //public DialogueManager managerObject;
 
-    private void Start()
+    /*private void Start()
     {
-        managerObject = FindFirstObjectByType<dialogueManager>();
+        managerObject = FindFirstObjectByType<DialogueManager>();
+        Debug.Log(managerObject);
+    }
+    */
+
+    private void Update()
+    {
+        /*
+        if (managerObject == null)
+        {
+            managerObject = FindFirstObjectByType<DialogueManager>();
+        }
+        */
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("Colliding with player");
-        managerObject.dialogue = dialogue;
+        //if(managerObject!= null)
+       // {
+            //managerObject.dialogue = dialogue;
+            DialogueManager.Instance.dialogue = dialogue;
+       // }
+        
     } // OnTriggerEnter2D
     
 } // NPCDialogue

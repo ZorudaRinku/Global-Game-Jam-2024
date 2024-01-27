@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class dialogueManager : MonoBehaviour
+public class DialogueManager : MonoBehaviour
 {
     // initialization phase
     public DialogueAsset dialogue;
@@ -15,6 +15,21 @@ public class dialogueManager : MonoBehaviour
     private float time;
     private int charIndex;
     private char[] charArray;
+
+    public static DialogueManager Instance { get; private set; }
+
+    // contructs singleton
+    private void Awake()
+    {
+        if(Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+
+    } // Awake
 
     // called on initialization
     private void Start()
@@ -38,6 +53,7 @@ public class dialogueManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+
             currentIndex++;
             if (currentIndex < dialogue.lines.Length)
             {
@@ -93,20 +109,19 @@ public class dialogueManager : MonoBehaviour
         charIndex = 0;
     } // resetCharArray
 
-    // received input from player.end if on last index item
-    public void sendDialogueKey()
-    {
-        dialogueBox.gameObject.SetActive(true);
-        //dialogue = lines;
-    } // sendDialogueKey
-
     // resets reused variables and prepares text field
     private void prepareDialogue()
     {
         textComponent.text = string.Empty;
-        //currentIndex = dialogue.startIndex;
-        currentIndex = 0;
+        currentIndex = dialogue.startIndex;
         resetCharArray();
     } // prepareDialogue
+
+    // activates and deactivates the dialogueBox
+    public void SetActive(bool active)
+    {
+        dialogueBox.gameObject.SetActive(active);
+    } // SetActive
+
 
 } // DialogueManager
