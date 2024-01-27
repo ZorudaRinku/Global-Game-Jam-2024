@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Scene_Management : MonoBehaviour
 {
-    // Start is called before the first frame update
-
-    // Update is called once per frame
-    void Update()
+    public void PlayGame()
     {
-        SceneManager.LoadScene("MainLevel");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
