@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    public AudioSource AudioSource;
     public float moveSpeed = 5f;
     public float health = 1;
     Vector2 movement;
