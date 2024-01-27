@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,7 @@ using TMPro;
 public class dialogueManager : MonoBehaviour
 {
     // initialization phase
-    [SerializeField] DialogueAsset dialogue;
+    public DialogueAsset dialogue;
     [SerializeField] float textSpeed;
     [SerializeField] Canvas dialogueBox;
     public TextMeshProUGUI textComponent;
@@ -19,10 +20,15 @@ public class dialogueManager : MonoBehaviour
     private void Start()
     {
         textComponent = GetComponent<TextMeshProUGUI>();
-        textComponent.text = string.Empty;
-        currentIndex = dialogue.startIndex;
-        resetCharArray();
+        prepareDialogue();
+        hideDialogue();
     } // Start
+
+    // runs every time script is set active
+    private void OnEnable()
+    {
+        prepareDialogue();
+    } // OnEnable
 
     // called once per frame
     private void Update()
@@ -30,19 +36,19 @@ public class dialogueManager : MonoBehaviour
         
         time += Time.deltaTime;
 
-        // proceed key, end if on last index item
         if (Input.GetKeyDown(KeyCode.Space))
         {
             currentIndex++;
             if (currentIndex < dialogue.lines.Length)
             {
                 proceedNextLine();
-            } else
+            }
+            else
             {
-                hideDialogue();
-            }  
+               hideDialogue();
+            }
         }
-
+        
         // stop displaying dialogue if no lines remaining
         if (currentIndex < dialogue.lines.Length)
         {
@@ -69,14 +75,13 @@ public class dialogueManager : MonoBehaviour
     // hides the dialogue display
     private void hideDialogue()
     {
+        textComponent.text = string.Empty;
         dialogueBox.gameObject.SetActive(false);
-        textComponent.text = string.Empty; ;
     } // hideDialogue
 
     // moves current dialogue to next line
     private void proceedNextLine()
     {
-        //currentIndex++;
         textComponent.text = string.Empty;
         resetCharArray();
     } // proceedNextLine
@@ -87,5 +92,21 @@ public class dialogueManager : MonoBehaviour
         charArray = dialogue.lines[currentIndex].ToCharArray();
         charIndex = 0;
     } // resetCharArray
+
+    // received input from player.end if on last index item
+    public void sendDialogueKey()
+    {
+        dialogueBox.gameObject.SetActive(true);
+        //dialogue = lines;
+    } // sendDialogueKey
+
+    // resets reused variables and prepares text field
+    private void prepareDialogue()
+    {
+        textComponent.text = string.Empty;
+        //currentIndex = dialogue.startIndex;
+        currentIndex = 0;
+        resetCharArray();
+    } // prepareDialogue
 
 } // DialogueManager
