@@ -43,11 +43,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 7629999125755081954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0676eb6bcfd36147969e3d10113e9ac, type: 3}
+  m_Script: {fileID: 11500000, guid: f42a35a51bd07a14684ed181a02dc004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSounds: []
-  SfxSounds: []
+  musicSounds:
+  - name: Town
+    clip: {fileID: 8300000, guid: 9f43edbf8611cb84a87f9cefe2952e63, type: 3}
+  - name: Boss
+    clip: {fileID: 8300000, guid: 6d39316db765c89449958db05068490a, type: 3}
+  SfxSounds:
+  - name: 
+    clip: {fileID: 0}
   musicSource: {fileID: 7629999126939412776}
   SfxSource: {fileID: 7629999126624848646}
 --- !u!1 &7629999126624848647
