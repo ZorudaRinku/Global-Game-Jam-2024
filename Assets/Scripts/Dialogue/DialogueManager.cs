@@ -5,13 +5,15 @@ using TMPro;
 
 public class dialogueManager : MonoBehaviour
 {
+    // initialization phase
     [SerializeField] DialogueAsset dialogue;
     [SerializeField] float textSpeed;
+    [SerializeField] Canvas dialogueBox;
     public TextMeshProUGUI textComponent;
-    public int currentIndex;
-    public float time;
-    public int charIndex;
-    char[] charArray;
+    private int currentIndex;
+    private float time;
+    private int charIndex;
+    private char[] charArray;
 
     // called on initialization
     private void Start()
@@ -23,21 +25,22 @@ public class dialogueManager : MonoBehaviour
     } // Start
 
     // called once per frame
-    private void FixedUpdate()
+    private void Update()
     {
+        
         time += Time.deltaTime;
 
         // proceed key, end if on last index item
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            currentIndex++;
             if (currentIndex < dialogue.lines.Length)
             {
                 proceedNextLine();
             } else
             {
                 hideDialogue();
-            }
-            
+            }  
         }
 
         // stop displaying dialogue if no lines remaining
@@ -51,7 +54,9 @@ public class dialogueManager : MonoBehaviour
     // displays one line of dialogue to the screen
     private void showDialogue(string line)
     {
-        
+
+        dialogueBox.gameObject.SetActive(true);
+
         if(time >= textSpeed && charIndex < charArray.Length)
         {
             textComponent.text += charArray[charIndex];
@@ -59,19 +64,19 @@ public class dialogueManager : MonoBehaviour
             time = 0.0f;
         }
 
-
     } // showDialogue
 
     // hides the dialogue display
     private void hideDialogue()
     {
-        textComponent.text = null;
+        dialogueBox.gameObject.SetActive(false);
+        textComponent.text = string.Empty; ;
     } // hideDialogue
 
     // moves current dialogue to next line
     private void proceedNextLine()
     {
-        currentIndex++;
+        //currentIndex++;
         textComponent.text = string.Empty;
         resetCharArray();
     } // proceedNextLine
@@ -82,4 +87,5 @@ public class dialogueManager : MonoBehaviour
         charArray = dialogue.lines[currentIndex].ToCharArray();
         charIndex = 0;
     } // resetCharArray
-} 
+
+} // DialogueManager
