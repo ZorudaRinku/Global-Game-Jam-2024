@@ -2,33 +2,39 @@ using System;
 
 public class PlayerEvents
 {
-    private int playerLevel; // TODO: Connect to player methods, need to call OnPlayerLevelChange when we instantiate the player (In "OnReady")
-    private int playerExperience; // TODO: Connect to player methods, need to call OnPlayerExperienceChange when we instantiate the player (In "OnReady")
-    private int playerHealth = 100;
-    
-    public event Action<int> OnPlayerLevelChange;
-    public void PlayerLevelChange(int level)
+    public event Action<int> OnPlayerLevelChanged;
+    public void PlayerLevelChanged(int level)
     {
-        OnPlayerLevelChange?.Invoke(level);
+        OnPlayerLevelChanged?.Invoke(level);
     }
     
-    public event Action<int> OnPlayerHealthChange;
-    public void PlayerHealthChange(int health)
+    public event Action<int> OnPlayerHealthChanged; // Set health
+    public void PlayerHealthChanged(int health)
     {
-        playerHealth += health;
-        OnPlayerHealthChange?.Invoke(playerHealth);
+        OnPlayerHealthChanged?.Invoke(health);
     }
     
-    public event Action<int> OnPlayerExperienceChange;
-    public void PlayerExperienceChange(int experience)
+    public event Action<int> OnPlayerHealthGained; // Add health
+    public void PlayerHealthGained(int health)
     {
-        playerExperience += experience;
-        if (playerExperience >= 100)
-        {
-            playerExperience -= 100;
-            playerLevel++;
-            PlayerLevelChange(playerLevel);
-        }
-        OnPlayerExperienceChange?.Invoke(experience);
+        OnPlayerHealthGained?.Invoke(health);
+    }
+    
+    public event Action<int> OnPlayerExperienceChanged; // Set experience
+    public void PlayerExperienceChanged(int experience)
+    {
+        OnPlayerExperienceChanged?.Invoke(experience);
+    }
+    
+    public event Action<int> OnPlayerExperienceGained; // Add experience
+    public void PlayerExperienceGained(int experience)
+    {
+        OnPlayerExperienceGained?.Invoke(experience);
+    }
+    
+    public event Action OnPlayerDied; // Add experience
+    public void PlayerDied()
+    {
+        OnPlayerDied?.Invoke();
     }
 }

@@ -20,7 +20,7 @@ public class QuestManager : MonoBehaviour
         GameEventsManager.Instance.questEvents.OnAdvanceQuest += AdvanceQuest;
         GameEventsManager.Instance.questEvents.OnFinishQuest += FinishQuest;
         
-        GameEventsManager.Instance.playerEvents.OnPlayerLevelChange += OnPlayerLevelChange;
+        GameEventsManager.Instance.playerEvents.OnPlayerLevelChanged += OnPlayerLevelChanged;
     }
     
     private void OnDisable()
@@ -29,7 +29,7 @@ public class QuestManager : MonoBehaviour
         GameEventsManager.Instance.questEvents.OnAdvanceQuest -= AdvanceQuest;
         GameEventsManager.Instance.questEvents.OnFinishQuest -= FinishQuest;
         
-        GameEventsManager.Instance.playerEvents.OnPlayerLevelChange -= OnPlayerLevelChange;
+        GameEventsManager.Instance.playerEvents.OnPlayerLevelChanged -= OnPlayerLevelChanged;
     }
 
     private void Start()
@@ -60,7 +60,7 @@ public class QuestManager : MonoBehaviour
         GameEventsManager.Instance.questEvents.QuestStateChange(quest);
     }
     
-    private void OnPlayerLevelChange(int level)
+    private void OnPlayerLevelChanged(int level)
     {
         currentPlayerLevel = level;
     }
@@ -112,7 +112,7 @@ public class QuestManager : MonoBehaviour
 
     private void ClaimRewards(Quest quest)
     {
-        GameEventsManager.Instance.playerEvents.PlayerExperienceChange(quest.info.experienceReward);
+        GameEventsManager.Instance.playerEvents.PlayerExperienceGained(quest.info.experienceReward);
     }
 
     private Dictionary<string, Quest> CreateQuestMap()
