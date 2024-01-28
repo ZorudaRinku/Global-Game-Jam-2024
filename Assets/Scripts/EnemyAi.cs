@@ -15,6 +15,7 @@ public class EnemyAi : MonoBehaviour
     private float health = 4;
     private Rigidbody2D rb;
     private float timer = 0;
+    private Collider2D collider2;
      void Start()
      {
 
@@ -56,9 +57,10 @@ public class EnemyAi : MonoBehaviour
              if (timer >= 2)
              {
                  health--;
-                 Debug.Log("hit");
+                 AudioManager.instance.PlaySFX("SwordHit");
                  if (health <= 0)
                  {
+                     AudioManager.instance.PlaySFX("MobDeath");
                      GameObject.Destroy(this.gameObject);
                  }
 

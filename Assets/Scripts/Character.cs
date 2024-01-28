@@ -9,7 +9,7 @@ public class Character : MonoBehaviour
     public static Character instance;
     public float moveSpeed = 5f;
     public float health = 3;
-    public  Vector2 movement;
+    public static Vector2 movement;
     private Vector2 Location;
     private Vector2 Locationtest;
     private double localx;
