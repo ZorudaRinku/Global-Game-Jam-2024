@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class TalkToHarvey : QuestStep
 {
+    public DialogueAsset questStartDialogue;
+
     private void OnEnable()
     {
         GameEventsManager.Instance.miscEvents.NpcInteract += OnTalkedToNPC;
@@ -20,7 +22,7 @@ public class TalkToHarvey : QuestStep
     {
         if (npcName == "Harvey")
         {
-            // TODO: Connect to DialogueManager
+            DialogueManager.Instance.initiateDialogue("npcName", questStartDialogue);
             FinishQuestStep();
         }
     }
