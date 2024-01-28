@@ -35,8 +35,6 @@ public class QuestPoint : MonoBehaviour
 
     private void SubmitPressed(string npcName)
     {
-        if (npcName != "Harvey") return;
-       
         switch (currentQuestState)
         {
             case QuestState.REQUIREMENTS_NOT_MET:
