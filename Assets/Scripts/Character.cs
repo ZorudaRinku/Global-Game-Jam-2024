@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    public static Character instance;
     public float moveSpeed = 5f;
     public float health = 1;
     Vector2 movement;
@@ -57,7 +58,7 @@ public class Character : MonoBehaviour
     {
         if (collision.collider.CompareTag("Enemy"))
         {
-            health = health - -0.5f;
+            health = health -0.5f;
             if (health == 0)
             {
                 GameObject.Destroy(this.gameObject);
