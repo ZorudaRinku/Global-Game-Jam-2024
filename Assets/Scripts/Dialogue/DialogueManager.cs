@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public DialogueAsset dialogue;
     [SerializeField] float textSpeed;
     [SerializeField] Canvas dialogueBox;
+    [SerializeField] Image characterPortrait;
     [SerializeField] Button buttonYes;
     [SerializeField] Button buttonNo;
     public TextMeshProUGUI textComponent;
@@ -174,6 +175,7 @@ public class DialogueManager : MonoBehaviour
     {
         buttonYes.gameObject.SetActive(true);
         buttonNo.gameObject.SetActive(true);
+        characterPortrait.gameObject.SetActive(true);
     } // showButtons
 
     // im sure you can figure this one out
@@ -181,6 +183,7 @@ public class DialogueManager : MonoBehaviour
     {
         buttonYes.gameObject.SetActive(false);
         buttonNo.gameObject.SetActive(false);
+        characterPortrait.gameObject.SetActive(false);
     } // hideButtons
 
 } // DialogueManager

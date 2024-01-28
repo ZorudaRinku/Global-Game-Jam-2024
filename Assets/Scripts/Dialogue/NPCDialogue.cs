@@ -6,11 +6,6 @@ public class NPCDialogue : MonoBehaviour
 {
     [SerializeField] DialogueAsset dialogue;
 
-    private void Update()
-    {
-
-    }
-
     private void OnCollisionEnter2D(Collision2D other)
     {
         DialogueManager.Instance.dialogue = dialogue;
