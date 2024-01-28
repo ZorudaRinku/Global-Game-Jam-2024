@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStatManager : MonoBehaviour
 {
@@ -45,8 +46,8 @@ public class PlayerStatManager : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            // TODO: Death screen
-            Debug.Log("You Died");
+
+            SceneManager.LoadScene(0);
             GameEventsManager.Instance.playerEvents.PlayerDied();
         }
         if (currentHealth >= 100) // Cap player health at 100
