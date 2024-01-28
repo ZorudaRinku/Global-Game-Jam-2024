@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: NPC Test 1
   m_EditorClassIdentifier: 
   lines:
-  - "Test 1\t"
-  - Test 2
-  - Test 3
+  - I am about to ask you a question.
+  - you like jazz?
+  - you sick fuck
+  lineRequiresReply: 000100
   startIndex: 0

@@ -15,4 +15,5 @@ MonoBehaviour:
   lines:
   - Test 1
   - Test 2
+  lineRequiresReply: 0000
   startIndex: 0

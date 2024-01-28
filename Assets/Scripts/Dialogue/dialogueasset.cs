@@ -10,5 +10,6 @@ public class DialogueAsset : ScriptableObject
     // custom properties
     [TextArea]
     public string[] lines;
+    public bool[] lineRequiresReply;
     public int startIndex = 0;
 }
