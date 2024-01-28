@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8335c19c64e9ad54396cfeed111f275a
+guid: db260da6f605a2f4b9c974e30509cbcb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7055799241588789657
-    second: HOUSE_0
+      213: -3753825769889500098
+    second: sword_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HOUSE_0
+      name: sword_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 128
-        height: 125
+        x: 9
+        y: 10
+        width: 19
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76e21a619f3c41e90800000000000000
-      internalID: -7055799241588789657
+      spriteID: e347705d95bb7ebc0800000000000000
+      internalID: -3753825769889500098
       vertices: []
       indices: 
       edges: []
@@ -170,7 +170,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      HOUSE_0: -7055799241588789657
+      sword_0: -3753825769889500098
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

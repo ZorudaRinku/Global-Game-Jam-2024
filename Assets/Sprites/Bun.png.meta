@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8335c19c64e9ad54396cfeed111f275a
+guid: 693f881efa41d964ab78176c393ad1a9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7055799241588789657
-    second: HOUSE_0
+      213: 2184277102450767653
+    second: Bun_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HOUSE_0
+      name: Bun_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2
-        width: 128
-        height: 125
+        y: 0
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76e21a619f3c41e90800000000000000
-      internalID: -7055799241588789657
+      spriteID: 527f89ea37c105e10800000000000000
+      internalID: 2184277102450767653
       vertices: []
       indices: 
       edges: []
@@ -170,7 +170,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      HOUSE_0: -7055799241588789657
+      Bun_0: 2184277102450767653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
