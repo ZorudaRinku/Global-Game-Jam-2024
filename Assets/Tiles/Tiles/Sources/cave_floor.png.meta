@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cave_floor_0: 1292258584740589356
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
