@@ -298,7 +298,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AidanGrass_0: 8736974198694518650
+      AidanGrass_1: -5338292514174418688
+      AidanGrass_2: 3346956982900845255
+      AidanGrass_3: -6982097039600534928
+      AidanGrass_4: -119453510530797582
+      AidanGrass_5: -2713863160127671378
+      AidanGrass_6: 5145393019477335466
+      AidanGrass_7: 2541732131562508218
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
