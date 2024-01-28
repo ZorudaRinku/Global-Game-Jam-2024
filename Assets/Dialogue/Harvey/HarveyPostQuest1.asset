@@ -10,13 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e150f37b3843044287d96f3a311d88a, type: 3}
-  m_Name: HarveyStartQuest
+  m_Name: HarveyPostQuest1
   m_EditorClassIdentifier: 
   lines:
-  - Hey there Blink!
-  - 'Hope you''re not busy. I have a favor to ask of you. '
-  - I dropped my Holy Oil in the grotto last night while loitering around.
-  - 'Can you go retrieve that for me? '
-  - 'Great! Come bring it back to me when you find it. '
-  lineRequiresReply: 0000000100
+  - 'Hey there Blink! Thanks for rubbing my back earlier. '
+  lineRequiresReply: 00
   startIndex: 0

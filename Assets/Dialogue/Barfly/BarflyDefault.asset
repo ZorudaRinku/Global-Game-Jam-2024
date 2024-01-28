@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e150f37b3843044287d96f3a311d88a, type: 3}
-  m_Name: HarveyPostQuest
+  m_Name: BarflyDefault
   m_EditorClassIdentifier: 
   lines:
-  - 'Hey there Blink! Thanks for rubbing my back earlier. '
+  - Huh?
   lineRequiresReply: 00
   startIndex: 0
