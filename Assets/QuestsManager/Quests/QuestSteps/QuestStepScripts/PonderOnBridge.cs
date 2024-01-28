@@ -8,30 +8,18 @@ public class PonderOnBridge : QuestStep
     private void OnEnable()
     {
         GameEventsManager.Instance.miscEvents.NpcInteract += OnTalkedToNPC;
-        GameEventsManager.Instance.miscEvents.KilledNpc += OnKilledNPC;
     }
 
     private void OnDisable()
     {
+        AssetBundle.UnloadAllAssetBundles(true);
         GameEventsManager.Instance.miscEvents.NpcInteract -= OnTalkedToNPC;
-        GameEventsManager.Instance.miscEvents.KilledNpc -= OnKilledNPC;
     }
     
     private void OnTalkedToNPC(string npcName)
     {
-        if (npcName == "Bridge Point")
-        {
-            // TODO: Connect to DialogueManager
-            FinishQuestStep();
-        }
-    }
-    
-    private void OnKilledNPC(string npcName)
-    {
-        if (npcName == "Harvey")
-        {
-            // TODO: Punish?
-            FinishQuestStep();
-        }
+        if (npcName != "Bridge") return;
+        DialogueManager.Instance.initiateDialogue("...", Resources.Load<DialogueAsset>("Dialogue/Bridge/PonderOverBridge"));
+        FinishQuestStep();
     }
 }

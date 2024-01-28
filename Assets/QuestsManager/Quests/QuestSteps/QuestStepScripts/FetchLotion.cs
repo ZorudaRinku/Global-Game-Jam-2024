@@ -8,29 +8,18 @@ public class FetchLotion : QuestStep
     private void OnEnable()
     {
         GameEventsManager.Instance.miscEvents.NpcInteract += OnTalkedToNPC;
-        GameEventsManager.Instance.miscEvents.KilledNpc += OnKilledNPC;
     }
 
     private void OnDisable()
     {
         GameEventsManager.Instance.miscEvents.NpcInteract -= OnTalkedToNPC;
-        GameEventsManager.Instance.miscEvents.KilledNpc -= OnKilledNPC;
     }
     
     private void OnTalkedToNPC(string npcName)
     {
         if (npcName == "Holy Oil")
         {
-            // TODO: Connect to DialogueManager
-            FinishQuestStep();
-        }
-    }
-    
-    private void OnKilledNPC(string npcName)
-    {
-        if (npcName == "Harvey")
-        {
-            // TODO: Punish?
+            DialogueAsset dialogue = Resources.Load<DialogueAsset>("Dialogue/HolyOil/GetLotion");
             FinishQuestStep();
         }
     }

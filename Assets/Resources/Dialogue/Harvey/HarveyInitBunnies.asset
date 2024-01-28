@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e150f37b3843044287d96f3a311d88a, type: 3}
-  m_Name: Test Speech
+  m_Name: HarveyInitBunnies
   m_EditorClassIdentifier: 
   lines:
-  - Test 1
-  - Test 2
-  lineRequiresReply: 0000
+  - Hey lil friend, got a.. quick favor to ask of you.
+  - Those darn bunnies running around.. always causing a ruckus... can you go take
+    care of *5* of them for me?
+  - Great! Let me know when the deed it done!
+  lineRequiresReply: 000100
   startIndex: 0

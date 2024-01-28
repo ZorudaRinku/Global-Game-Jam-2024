@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4153277064718488640}
   - component: {fileID: 3552637775840450930}
+  - component: {fileID: 801196885191440078}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Sword
@@ -26,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 4879187323415569563}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.17, y: -0.01, z: -2.569656}
-  m_LocalScale: {x: 4.754465, y: 4.857565, z: 1}
+  m_LocalPosition: {x: 0.825, y: 0.004, z: -2.569656}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4304609435196541064}
@@ -87,6 +88,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &801196885191440078
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4879187323415569563}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.59375, y: 0.34375}
+    newSize: {x: 0.19, y: 0.11}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.08046779, y: 0.14319307}
+      - {x: -0.1960738, y: 0.018781839}
+      - {x: -0.2648035, y: 0.018215176}
+      - {x: -0.26676562, y: -0.01714404}
+      - {x: -0.19654715, y: -0.017383568}
+      - {x: -0.07778238, y: -0.14175491}
+      - {x: 0.02058801, y: -0.14231902}
+      - {x: 0.017570466, y: -0.10670856}
+      - {x: 0.17087103, y: -0.109704524}
+      - {x: 0.26625317, y: -0.014418002}
+      - {x: 0.26611903, y: 0.019031204}
+      - {x: 0.17412879, y: 0.1113133}
+      - {x: 0.01824314, y: 0.11219336}
+      - {x: 0.017339036, y: 0.14339927}
+  m_UseDelaunayMesh: 0
 --- !u!1 &9044515890635319060
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,7 +217,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9044515890635319060}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}

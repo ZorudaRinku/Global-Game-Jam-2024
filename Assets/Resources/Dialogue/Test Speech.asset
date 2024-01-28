@@ -10,13 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e150f37b3843044287d96f3a311d88a, type: 3}
-  m_Name: HarveyEndQuest1
+  m_Name: Test Speech
   m_EditorClassIdentifier: 
   lines:
-  - You really went and got my Holy Oil?
-  - 'Great! '
-  - Due to technical limitations, I left my back asset at home.
-  - Can you apply that Holy Oil on my back?
-  - Just step around back there and press 'Q'.
-  lineRequiresReply: 0000000100
+  - Test 1
+  - Test 2
+  lineRequiresReply: 0100
   startIndex: 0
