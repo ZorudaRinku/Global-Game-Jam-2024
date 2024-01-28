@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e150f37b3843044287d96f3a311d88a, type: 3}
+  m_Name: HarveyStartQuest
+  m_EditorClassIdentifier: 
+  lines:
+  - Hey there Blink!
+  - 'Hope you''re not busy. I have a favor to ask of you. '
+  - I dropped my Holy Oil in the grotto last night while loitering around.
+  - 'Can you go retrieve that for me? '
+  - 'Great! Come bring it back to me when you find it. '
+  lineRequiresReply: 0000000100
+  startIndex: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NPCDialogue : MonoBehaviour
 {
+    /*
     [SerializeField] DialogueAsset dialogue;
     [SerializeField] string npcName;
 
@@ -12,5 +13,5 @@ public class NPCDialogue : MonoBehaviour
         DialogueManager.Instance.dialogue = dialogue;
         DialogueManager.Instance.npcName = npcName;
     } // OnTriggerEnter2D
-    
+    */
 } // NPCDialogue
