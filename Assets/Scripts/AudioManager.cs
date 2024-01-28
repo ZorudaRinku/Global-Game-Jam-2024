@@ -27,12 +27,9 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        if(SceneManager.GetActiveScene().buildIndex == 1) 
-        {PlayMusic("Boss");}
-        else
-        {
-            PlayMusic("Town");
-        }
+        
+        
+            PlayMusic("MenuMusic");
     }
     public void PlayMusic(string name)
     {

@@ -5,6 +5,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -120,10 +121,14 @@ public class DialogueManager : MonoBehaviour
     } // hideDialogue
 
     // moves current dialogue to next line
+    // Random Dialouge sounds played via audio manager
     private void proceedNextLine()
     {
         textComponent.text = string.Empty;
         resetCharArray();
+        string[] audio = { "Dialouge1", "Dialouge2" };
+        int rand = Random.Range(0, 1);
+        AudioManager.instance.PlaySFX(audio[rand]);
     } // proceedNextLine
 
     // resets char array for text scroll

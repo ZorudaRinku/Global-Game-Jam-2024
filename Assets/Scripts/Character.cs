@@ -6,8 +6,9 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    public static Character instance;
     public float moveSpeed = 5f;
-
+    public float health = 3;
     public static Vector2 movement;
     private Vector2 Location;
     private Vector2 Locationtest;
@@ -17,6 +18,8 @@ public class Character : MonoBehaviour
     private double localty;
     private float walkaudiocooldown;
     private Rigidbody2D rb;
+
+    private float timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +36,10 @@ public class Character : MonoBehaviour
          localy = Location.y;
          localty = Locationtest.y;
          localtx= Locationtest.x;
+         if (timer <= 2)
+         {
+             timer += Time.deltaTime;
+         }
     }
 
     private void FixedUpdate()

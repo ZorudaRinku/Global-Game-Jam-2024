@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7629999125755081952}
   - component: {fileID: 8112339134428474228}
+  - component: {fileID: -3218913330899492632}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -86,6 +87,18 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 88e4c35addfd99e44aff166ea0fb351e, type: 3}
   musicSource: {fileID: 7629999126939412776}
   SfxSource: {fileID: 7629999126624848646}
+--- !u!114 &-3218913330899492632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7629999125755081954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56766d575178b08458dfb303b9ba3329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7629999126624848647
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,7 +275,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.751
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
