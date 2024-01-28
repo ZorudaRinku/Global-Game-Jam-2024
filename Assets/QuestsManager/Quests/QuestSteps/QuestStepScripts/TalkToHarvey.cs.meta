@@ -1,2 +1,13 @@
 fileFormatVersion: 2
 guid: 28ba9b4bfe9d83049a7741397fcc6a0a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - questStartDialogue: {fileID: 11400000, guid: 1fb31d5eeacd65448bcfea478a0e606d,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -23,7 +23,7 @@ public class QuestPoint : MonoBehaviour
     
     private void OnEnable()
     {
-        GameEventsManager.Instance.questEvents.OnQuestStateChange += OnQuestStateChange;
+            GameEventsManager.Instance.questEvents.OnQuestStateChange += OnQuestStateChange;
         GameEventsManager.Instance.miscEvents.NpcInteract += SubmitPressed;
     }
     
@@ -35,15 +35,19 @@ public class QuestPoint : MonoBehaviour
 
     private void SubmitPressed(string npcName)
     {
+        if (npcName != gameObject.name) return;
+        
         switch (currentQuestState)
         {
             case QuestState.REQUIREMENTS_NOT_MET:
                 // TODO: Create "requirements not met" dialogue event
                 break;
             case QuestState.CAN_START when startPoint:
+                DialogueManager.Instance.initiateDialogue(npcName, questInfoForPoint.startDialogue);
                 GameEventsManager.Instance.questEvents.StartQuest(questId);
                 break;
             case QuestState.CAN_FINISH when endPoint:
+                DialogueManager.Instance.initiateDialogue(npcName, questInfoForPoint.finishDialogue);
                 GameEventsManager.Instance.questEvents.FinishQuest(questId);
                 break;
         }

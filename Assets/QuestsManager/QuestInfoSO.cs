@@ -19,6 +19,10 @@ public class QuestInfoSO : ScriptableObject
     [Header("Rewards")] 
     public int experienceReward;
     
+    [Header("Dialogues")]
+    public DialogueAsset startDialogue;
+    public DialogueAsset finishDialogue;
+    
     
     // Ensure that the id is always the same as the name of the SO
     private void OnValidate()

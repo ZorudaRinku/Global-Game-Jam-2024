@@ -4,19 +4,28 @@ using UnityEngine;
 
 public class PlayerDialogueInteract : MonoBehaviour
 {
-    private bool inConversation;
+    /*
 
     private void Start()
     {
         DialogueManager.Instance.inConversation = false;
-    }
+        GameEventsManager.Instance.miscEvents.NpcInteract += playerInitiatedDialogue;
+
+    } // Start
 
     private void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.E) && !DialogueManager.Instance.inConversation)
         {
-            DialogueManager.Instance.SetActive(true);
+            
         }
     } // Update
 
+    // subscribed to NPC interact event, initiates relevant dialogue
+    private void playerInitiatedDialogue(string npcName)
+    {
+        DialogueManager.Instance.initiateDialogue(npcName, );
+    } // playerInitiatedDialogue
+    */
 } // PlayerDialogueInteract

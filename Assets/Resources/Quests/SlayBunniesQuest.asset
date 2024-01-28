@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d78ae21ea5e75c445a63c9f6ea0e5bb0, type: 3}
-  m_Name: FindFirstNPCPlaceholderkinda
+  m_Name: SlayBunniesQuest
   m_EditorClassIdentifier: 
-  <id>k__BackingField: FindFirstNPCPlaceholderkinda
-  displayName: Find Harvey!
-  levelRequirement: 1
+  <id>k__BackingField: SlayBunniesQuest
+  displayName: Slay Bunnies!
+  levelRequirement: 0
   questPrerequisites: []
   questStepPrefabs:
-  - {fileID: 1590273147973682784, guid: ca3d25fcadab2a54ab005b2f51102e81, type: 3}
-  experienceReward: 25
+  - {fileID: 2008711042984652613, guid: c84a005869d595548b1a6ab4043d4ff4, type: 3}
+  experienceReward: -75
+  startDialogue: {fileID: 11400000, guid: 73abd0cca86dfb941933e92ef4268aeb, type: 2}
+  finishDialogue: {fileID: 11400000, guid: 9e007865c34d8d749bd379832f64ce8a, type: 2}

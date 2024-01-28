@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e150f37b3843044287d96f3a311d88a, type: 3}
-  m_Name: Test Speech
+  m_Name: HarveyStartQuest1
   m_EditorClassIdentifier: 
   lines:
-  - Test 1
-  - Test 2
-  lineRequiresReply: 0000
+  - Hey there Blink!
+  - 'Hope you''re not busy. I have a favor to ask of you. '
+  - I dropped my Holy Oil in the grotto last night while loitering around.
+  - 'Can you go retrieve that for me? '
+  - 'Great! Come bring it back to me when you find it. '
+  lineRequiresReply: 0000000100
   startIndex: 0

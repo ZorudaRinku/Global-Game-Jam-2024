@@ -5,33 +5,22 @@ using UnityEngine;
 
 public class TalkToHarvey : QuestStep
 {
+    public DialogueAsset questStartDialogue;
+
     private void OnEnable()
     {
         GameEventsManager.Instance.miscEvents.NpcInteract += OnTalkedToNPC;
-        GameEventsManager.Instance.miscEvents.KilledNpc += OnKilledNPC;
     }
 
     private void OnDisable()
     {
         GameEventsManager.Instance.miscEvents.NpcInteract -= OnTalkedToNPC;
-        GameEventsManager.Instance.miscEvents.KilledNpc -= OnKilledNPC;
     }
     
     private void OnTalkedToNPC(string npcName)
     {
-        if (npcName == "Harvey")
-        {
-            // TODO: Connect to DialogueManager
-            FinishQuestStep();
-        }
-    }
-    
-    private void OnKilledNPC(string npcName)
-    {
-        if (npcName == "Harvey")
-        {
-            // TODO: Punish?
-            FinishQuestStep();
-        }
+        if (npcName != "Harvey") return;
+        DialogueManager.Instance.initiateDialogue(npcName, questStartDialogue);
+        FinishQuestStep();
     }
 }
