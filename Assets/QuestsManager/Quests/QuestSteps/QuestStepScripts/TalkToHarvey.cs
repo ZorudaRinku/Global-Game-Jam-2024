@@ -14,6 +14,7 @@ public class TalkToHarvey : QuestStep
     private void OnDisable()
     {
         GameEventsManager.Instance.miscEvents.NpcInteract -= OnTalkedToNPC;
+        GameEventsManager.Instance.miscEvents.KilledNpc -= OnKilledNPC;
     }
     
     private void OnTalkedToNPC(string npcName)
