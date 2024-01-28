@@ -286,7 +286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 42.5, y: 0.0000016052}
+  m_AnchoredPosition: {x: 42.5, y: 0}
   m_SizeDelta: {x: 56.086426, y: 40.441162}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3465891406169150100
@@ -317,10 +317,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 99
+  m_text: 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4dd746c25d8f78d41805273a9b263ee5, type: 2}
-  m_sharedMaterial: {fileID: 7743236500795602414, guid: 4dd746c25d8f78d41805273a9b263ee5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b6ba9d3402d8f404f9721cd388f695f4, type: 2}
+  m_sharedMaterial: {fileID: 7743236500795602414, guid: b6ba9d3402d8f404f9721cd388f695f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -534,7 +534,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.5
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
