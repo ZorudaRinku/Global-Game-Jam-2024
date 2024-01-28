@@ -42,7 +42,7 @@ public class Character : MonoBehaviour
         if (localtx != localx || localty != localy)
         {
 
-        walkaudiocooldown = walkaudiocooldown + 1 * Time.deltaTime;
+            walkaudiocooldown = walkaudiocooldown + 1 * Time.deltaTime;
 
         }
 
