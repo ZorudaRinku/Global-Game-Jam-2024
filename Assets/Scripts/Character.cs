@@ -8,7 +8,7 @@ public class Character : MonoBehaviour
 {
     public static Character instance;
     public float moveSpeed = 5f;
-    public float health = 1;
+    public float health = 3;
     Vector2 movement;
     private Vector2 Location;
     private Vector2 Locationtest;
@@ -18,6 +18,8 @@ public class Character : MonoBehaviour
     private double localty;
     private float walkaudiocooldown;
     private Rigidbody2D rb;
+
+    private float timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,10 @@ public class Character : MonoBehaviour
          localy = Location.y;
          localty = Locationtest.y;
          localtx= Locationtest.x;
+         if (timer <= 2)
+         {
+             timer += Time.deltaTime;
+         }
     }
 
     private void FixedUpdate()
@@ -58,10 +64,15 @@ public class Character : MonoBehaviour
     {
         if (collision.collider.CompareTag("Enemy"))
         {
-            health = health -0.5f;
-            if (health == 0)
+            if (timer >= 2)
             {
-                GameObject.Destroy(this.gameObject);
+                health = health -0.5f;
+                if (health == 0)
+                {
+                    GameObject.Destroy(this.gameObject);
+                }
+
+                timer = 0;
             }
         }
     }
