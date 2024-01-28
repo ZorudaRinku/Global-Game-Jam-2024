@@ -10,11 +10,14 @@ public class DialogueManager : MonoBehaviour
 {
     // initialization phase
     public DialogueAsset dialogue;
+    public string npcName;
     [SerializeField] float textSpeed;
     [SerializeField] Canvas dialogueBox;
     [SerializeField] Image characterPortrait;
     [SerializeField] Button buttonYes;
     [SerializeField] Button buttonNo;
+    [SerializeField] GameObject npcNameBox;
+    [SerializeField] TextMeshProUGUI npcNameText;
     public TextMeshProUGUI textComponent;
     private int currentIndex;
     private float time;
@@ -51,6 +54,7 @@ public class DialogueManager : MonoBehaviour
     {
         prepareDialogue(true);
         inConversation = true;
+        npcNameText.text = npcName;
     } // OnEnable
 
     // called once per frame
@@ -176,6 +180,7 @@ public class DialogueManager : MonoBehaviour
         buttonYes.gameObject.SetActive(true);
         buttonNo.gameObject.SetActive(true);
         characterPortrait.gameObject.SetActive(true);
+        npcNameBox.gameObject.SetActive(false);
     } // showButtons
 
     // im sure you can figure this one out
@@ -184,6 +189,7 @@ public class DialogueManager : MonoBehaviour
         buttonYes.gameObject.SetActive(false);
         buttonNo.gameObject.SetActive(false);
         characterPortrait.gameObject.SetActive(false);
+        npcNameBox.gameObject.SetActive(true);
     } // hideButtons
 
 } // DialogueManager

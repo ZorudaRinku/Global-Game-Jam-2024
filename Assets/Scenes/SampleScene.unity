@@ -151,8 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ad4620c5c139047b62aedb75965ff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkDistance: 0
-  DialogueManagerObject: {fileID: 1065894385}
 --- !u!61 &133558843
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -387,6 +385,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5711656630811593781, guid: 6d5153d2406c44b43adc45a6aed629ea, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00012207031
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315327211981555524, guid: 6d5153d2406c44b43adc45a6aed629ea, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00012207031
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -425,6 +431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: 219da35ec727d2e4eaf3b14bd32be5fe, type: 2}
+  npcName: Test Name
 --- !u!61 &1059565808
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -567,11 +574,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &1065894385 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2909898975572354246, guid: 6d5153d2406c44b43adc45a6aed629ea, type: 3}
-  m_PrefabInstance: {fileID: 812108622}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1185306885
 GameObject:
   m_ObjectHideFlags: 0
