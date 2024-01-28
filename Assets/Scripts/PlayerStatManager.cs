@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerLevelManager : MonoBehaviour
+public class PlayerStatManager : MonoBehaviour
 {
     [Header("Configuration")]
     [SerializeField] private int startingLevel = 1;
@@ -58,12 +58,19 @@ public class PlayerLevelManager : MonoBehaviour
     private void ExperienceGained(int experience) 
     {
         currentExperience += experience;
-        // check if we're ready to level up
-        while (currentExperience >= 100) 
+
+        switch (currentExperience)
         {
-            currentExperience -= 100;
-            currentLevel++;
-            GameEventsManager.Instance.playerEvents.PlayerLevelChanged(currentLevel);
+            case >= 100:
+                currentExperience -= 100;
+                currentLevel++;
+                GameEventsManager.Instance.playerEvents.PlayerLevelChanged(currentLevel);
+                break;
+            case <= 0:
+                currentExperience += 100;
+                currentLevel--;
+                GameEventsManager.Instance.playerEvents.PlayerLevelChanged(currentLevel);
+                break;
         }
         GameEventsManager.Instance.playerEvents.PlayerExperienceChanged(currentExperience);
     }
