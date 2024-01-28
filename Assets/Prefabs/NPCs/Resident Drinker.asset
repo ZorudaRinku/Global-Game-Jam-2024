@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5952fe70ea05b14eb56d996949bb568, type: 3}
   m_Name: Resident Drinker
   m_EditorClassIdentifier: 
-  defaultLine: {fileID: 0}
-  characterName: 
+  defaultLine: {fileID: 11400000, guid: 6799e027ddc4d0e4c943cc833e21c9e2, type: 2}
+  characterName: ResidentDrinker
   characterSprite: {fileID: 0}
   isAlive: 1

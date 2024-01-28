@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5952fe70ea05b14eb56d996949bb568, type: 3}
   m_Name: Blacksmith Harvey
   m_EditorClassIdentifier: 
-  defaultLine: {fileID: 0}
-  characterName: 
-  characterSprite: {fileID: 0}
+  defaultLine: {fileID: 11400000, guid: 57adb5a3b2c67a94fa71ddcbdd420bb8, type: 2}
+  characterName: Blacksmith Harvey
+  characterSprite: {fileID: 712247354984157230, guid: c91e365854020c6449825d4792a92a67,
+    type: 3}
   isAlive: 1

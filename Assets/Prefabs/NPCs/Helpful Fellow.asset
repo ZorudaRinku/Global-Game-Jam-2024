@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5952fe70ea05b14eb56d996949bb568, type: 3}
   m_Name: Helpful Fellow
   m_EditorClassIdentifier: 
-  defaultLine: {fileID: 0}
-  characterName: 
+  defaultLine: {fileID: 11400000, guid: a78e6825f3ffea44bb2d7d249f22f2cc, type: 2}
+  characterName: Helpful Fellow
   characterSprite: {fileID: 0}
   isAlive: 1

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5952fe70ea05b14eb56d996949bb568, type: 3}
   m_Name: Harvey's Wife
   m_EditorClassIdentifier: 
-  defaultLine: {fileID: 0}
-  characterName: 
+  defaultLine: {fileID: 11400000, guid: b68c9f59a83ea19458b8cdbd8f9301ce, type: 2}
+  characterName: Harvey's Wife
   characterSprite: {fileID: 0}
   isAlive: 1
