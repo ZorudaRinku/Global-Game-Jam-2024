@@ -8,7 +8,7 @@ public class Character : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
-    Vector2 movement;
+    public static Vector2 movement;
     private Vector2 Location;
     private Vector2 Locationtest;
     private double localx;
@@ -41,7 +41,7 @@ public class Character : MonoBehaviour
         Locationtest = rb.position;
         if (localtx != localx || localty != localy)
         {
-;
+
         walkaudiocooldown = walkaudiocooldown + 1 * Time.deltaTime;
 
         }
