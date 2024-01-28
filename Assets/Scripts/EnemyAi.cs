@@ -18,11 +18,8 @@ public class EnemyAi : MonoBehaviour
     private Collider2D collider2;
      void Start()
      {
-
-
          startingpostion = transform.position;
          rb = GetComponent<Rigidbody2D>();
-
 
      }
 
@@ -58,10 +55,12 @@ public class EnemyAi : MonoBehaviour
              {
                  health--;
                  AudioManager.instance.PlaySFX("SwordHit");
+                 GameEventsManager.Instance.entityEvents.HitEntity(gameObject.name);
                  if (health <= 0)
                  {
                      AudioManager.instance.PlaySFX("MobDeath");
                      GameObject.Destroy(this.gameObject);
+                     GameEventsManager.Instance.entityEvents.KilledEntity(gameObject.name);
                  }
 
                  timer = 0;
