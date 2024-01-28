@@ -147,6 +147,15 @@ public class DialogueManager : MonoBehaviour
         resetCharArray();
     } // prepareDialogue
 
+    // passes npc name and a dialogue asset to the DM, which then activates itself
+    public void initiateDialogue(string nameToPass, DialogueAsset dialogueToPass)
+    {
+        npcName = nameToPass;
+        dialogue = dialogueToPass; 
+        dialogueBox.gameObject.SetActive(true);
+
+    } // initiateDialogue
+
     // activates and deactivates the dialogueBox
     public void SetActive(bool active)
     {
