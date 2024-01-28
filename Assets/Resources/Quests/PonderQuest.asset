@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d78ae21ea5e75c445a63c9f6ea0e5bb0, type: 3}
-  m_Name: FindFirstNPCPlaceholderkinda
+  m_Name: PonderQuest
   m_EditorClassIdentifier: 
-  <id>k__BackingField: FindFirstNPCPlaceholderkinda
-  displayName: Find Harvey!
+  <id>k__BackingField: PonderQuest
+  displayName: Ponder
   levelRequirement: 1
-  questPrerequisites:
-  - {fileID: 11400000, guid: 0ffddf279d9bded4b85e11b2b07668d8, type: 2}
-  - {fileID: 11400000, guid: d902e9fa1a8b4d045b948d599984c5c2, type: 2}
+  questPrerequisites: []
   questStepPrefabs:
-  - {fileID: 1590273147973682784, guid: ca3d25fcadab2a54ab005b2f51102e81, type: 3}
-  experienceReward: 25
+  - {fileID: 5333059115442191647, guid: 79624df9c3bd0224db14f1c06e557ea6, type: 3}
+  experienceReward: -500

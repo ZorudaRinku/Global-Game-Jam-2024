@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7597865337110147810}
   - component: {fileID: 5187397701533321472}
   m_Layer: 0
-  m_Name: QuestPoint
+  m_Name: QuestPoint (Dont Use)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

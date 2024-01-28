@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 public class QuestEvents
 {
@@ -23,6 +24,7 @@ public class QuestEvents
     public event Action<Quest> OnQuestStateChange;
     public void QuestStateChange(Quest quest)
     {
+        
         OnQuestStateChange?.Invoke(quest);
     }
 }

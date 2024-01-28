@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TalkToHarvey : QuestStep
+public class PonderOnBridge : QuestStep
 {
     private void OnEnable()
     {
@@ -19,7 +19,7 @@ public class TalkToHarvey : QuestStep
     
     private void OnTalkedToNPC(string npcName)
     {
-        if (npcName == "Harvey Point")
+        if (npcName == "Bridge Point")
         {
             // TODO: Connect to DialogueManager
             FinishQuestStep();

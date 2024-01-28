@@ -59,20 +59,30 @@ public class PlayerStatManager : MonoBehaviour
     {
         currentExperience += experience;
 
-        switch (currentExperience)
+        while (currentExperience >= 100)
         {
-            case >= 100:
-                currentExperience -= 100;
-                currentLevel++;
-                GameEventsManager.Instance.playerEvents.PlayerLevelChanged(currentLevel);
-                break;
-            case <= 0:
-                currentExperience += 100;
-                currentLevel--;
-                GameEventsManager.Instance.playerEvents.PlayerLevelChanged(currentLevel);
-                break;
+            LevelUp();
         }
+        while (currentExperience <= 0)
+        {
+            LevelDown();
+        }
+        
         GameEventsManager.Instance.playerEvents.PlayerExperienceChanged(currentExperience);
+    }
+    
+    private void LevelUp()
+    {
+        currentExperience -= 100;
+        currentLevel++;
+        GameEventsManager.Instance.playerEvents.PlayerLevelChanged(currentLevel);
+    }
+    
+    private void LevelDown()
+    {
+        currentExperience += 100;
+        currentLevel--;
+        GameEventsManager.Instance.playerEvents.PlayerLevelChanged(currentLevel);
     }
 
 }
