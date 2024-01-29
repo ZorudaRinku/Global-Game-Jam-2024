@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingLevel: 99
-  startingExperience: 99
+  startingExperience: 100
   startingHealth: 100
 --- !u!95 &6161305409385952851
 Animator:
