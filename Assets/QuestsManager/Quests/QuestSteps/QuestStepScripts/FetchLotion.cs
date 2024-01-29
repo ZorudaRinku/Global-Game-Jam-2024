@@ -5,9 +5,13 @@ using UnityEngine;
 
 public class FetchLotion : QuestStep
 {
+    [SerializeField] private GameObject holyOilPrefab;
+    private GameObject holyOil;
     private void OnEnable()
     {
         GameEventsManager.Instance.miscEvents.NpcInteract += OnTalkedToNPC;
+        holyOil = Instantiate(holyOilPrefab);
+        // holyOil.transform.position = new Vector3(0, 0, 0); Animation will handle this
     }
 
     private void OnDisable()
@@ -17,9 +21,9 @@ public class FetchLotion : QuestStep
     
     private void OnTalkedToNPC(string npcName)
     {
-        if (npcName == "Holy Oil")
+        if (npcName == holyOil.name)
         {
-            DialogueAsset dialogue = Resources.Load<DialogueAsset>("Dialogue/HolyOil/GetLotion");
+            Destroy(holyOil);
             FinishQuestStep();
         }
     }
