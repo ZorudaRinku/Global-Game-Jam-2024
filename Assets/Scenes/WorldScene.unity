@@ -601,7 +601,7 @@ Transform:
   m_GameObject: {fileID: 234122175}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.5, y: 33.2, z: 0}
+  m_LocalPosition: {x: 39.54, y: 23.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1239,7 +1239,7 @@ Transform:
   m_GameObject: {fileID: 705407285}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.97, y: 7.92, z: -3.5890357}
+  m_LocalPosition: {x: 2.82, y: -0.43, z: -3.5890357}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1443,6 +1443,7 @@ GameObject:
   - component: {fileID: 1039954986}
   - component: {fileID: 1039954985}
   - component: {fileID: 1039954984}
+  - component: {fileID: 1039954987}
   m_Layer: 0
   m_Name: Harvey
   m_TagString: NPC
@@ -1485,7 +1486,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 3
+  m_Radius: 1.4695333
 --- !u!212 &1039954982
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1529,8 +1530,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee,
-    type: 3}
+  m_Sprite: {fileID: 712247354984157230, guid: c91e365854020c6449825d4792a92a67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1550,8 +1550,8 @@ Transform:
   m_GameObject: {fileID: 1039954980}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.77, y: 16.12, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.85, y: 6.41, z: -1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1568,7 +1568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc11fdba66bed384583ee8ded7da42c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questInfoForPoint: {fileID: 11400000, guid: acc7067210a8e8044a87e608f2059554, type: 2}
+  questInfoForPoint: {fileID: 11400000, guid: 7cf10fbbada156a4b958acbea11295e7, type: 2}
   startPoint: 1
   endPoint: 1
 --- !u!114 &1039954985
@@ -1601,6 +1601,28 @@ MonoBehaviour:
   questInfoForPoint: {fileID: 11400000, guid: d902e9fa1a8b4d045b948d599984c5c2, type: 2}
   startPoint: 1
   endPoint: 1
+--- !u!95 &1039954987
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039954980}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7b90a8d8b7994eb4c9701b2ba6fe7914, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1108279169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2721,6 +2743,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8267041969957774454, guid: 4b8ad38a144d7714588ae1432d497640,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+    - target: {fileID: 9119358813421335222, guid: 4b8ad38a144d7714588ae1432d497640,
+        type: 3}
+      propertyPath: textSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2817,6 +2849,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4481485231095580748, guid: 333fc544274ba784d980bcbb9e671ed1,
+        type: 3}
+      propertyPath: m_ColliderPaths.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6204833184393820682, guid: 333fc544274ba784d980bcbb9e671ed1,
         type: 3}
       propertyPath: m_Name

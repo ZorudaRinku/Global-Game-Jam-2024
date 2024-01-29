@@ -15,8 +15,13 @@ MonoBehaviour:
   lines:
   - You really went and got my Holy Oil?
   - 'Great! '
-  - Due to technical limitations, I left my back asset at home.
+  - 'Due to technical limitations, I left my back asset at home.
+
+    Also the rest
+    of this game. There is nothing left. Please press ALT+F4 to exit.'
   - Can you apply that Holy Oil on my back?
-  - Just step around back there and press 'E'.
+  - 'Just step around back there and press ''E''.
+
+    (Try: ALT+F4, instead)'
   lineRequiresReply: 0000000100
   startIndex: 0

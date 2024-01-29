@@ -18,7 +18,6 @@ MonoBehaviour:
   questPrerequisites:
   - {fileID: 11400000, guid: 926a4460b75b647489082e3c51c5a0c0, type: 2}
   - {fileID: 11400000, guid: d902e9fa1a8b4d045b948d599984c5c2, type: 2}
-  - {fileID: 11400000, guid: d3e02e80a4363864c854975b495dbd1e, type: 2}
   questStepPrefabs:
   - {fileID: 1741971489264759242, guid: dd16f9214c2b12441b45f8ef60dfd70d, type: 3}
   experienceReward: -99

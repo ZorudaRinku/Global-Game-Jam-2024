@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,9 +125,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 124
+        y: 192
         width: 32
-        height: 100
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,10 +145,10 @@ TextureImporter:
       name: AidanGrass_1
       rect:
         serializedVersion: 2
-        x: 2
-        y: 99
-        width: 9
-        height: 15
+        x: 0
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +166,10 @@ TextureImporter:
       name: AidanGrass_2
       rect:
         serializedVersion: 2
-        x: 18
-        y: 100
-        width: 11
-        height: 20
+        x: 0
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,10 +187,10 @@ TextureImporter:
       name: AidanGrass_3
       rect:
         serializedVersion: 2
-        x: 2
-        y: 70
-        width: 20
-        height: 21
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,10 +208,10 @@ TextureImporter:
       name: AidanGrass_4
       rect:
         serializedVersion: 2
-        x: 18
-        y: 66
-        width: 7
-        height: 7
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,10 +229,10 @@ TextureImporter:
       name: AidanGrass_5
       rect:
         serializedVersion: 2
-        x: 2
-        y: 35
-        width: 15
-        height: 28
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,52 +246,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: AidanGrass_6
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 55
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aad98b390bb186740800000000000000
-      internalID: 5145393019477335466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AidanGrass_7
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 34
-        width: 8
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: abfcaff28eb064320800000000000000
-      internalID: 2541732131562508218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 793588952e187c64a94cda80d51179d3
     internalID: 0
     vertices: []
     indices: 
@@ -305,8 +263,6 @@ TextureImporter:
       AidanGrass_3: -6982097039600534928
       AidanGrass_4: -119453510530797582
       AidanGrass_5: -2713863160127671378
-      AidanGrass_6: 5145393019477335466
-      AidanGrass_7: 2541732131562508218
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

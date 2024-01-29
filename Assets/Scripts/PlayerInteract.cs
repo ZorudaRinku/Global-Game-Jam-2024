@@ -8,8 +8,10 @@ public class PlayerInteract : MonoBehaviour
     void Update()
     {
         if (!Input.GetKeyDown(KeyCode.E)) return;
+        // Create a temporary copy for enumeration
+        var tempTriggers = new List<Collider2D>(collidingTriggers);
         // Process the list of colliding triggers
-        foreach (var trigger in collidingTriggers)
+        foreach (var trigger in tempTriggers)
         {
             if (trigger.CompareTag("NPC"))
             {
