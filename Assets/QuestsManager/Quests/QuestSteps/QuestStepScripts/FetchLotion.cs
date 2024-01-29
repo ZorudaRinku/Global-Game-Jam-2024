@@ -9,22 +9,21 @@ public class FetchLotion : QuestStep
     private GameObject holyOil;
     private void OnEnable()
     {
-        GameEventsManager.Instance.miscEvents.NpcInteract += OnTalkedToNPC;
+        GameEventsManager.Instance.miscEvents.OnInteract += TalkedTo;
         holyOil = Instantiate(holyOilPrefab);
         // holyOil.transform.position = new Vector3(0, 0, 0); Animation will handle this
     }
 
     private void OnDisable()
     {
-        GameEventsManager.Instance.miscEvents.NpcInteract -= OnTalkedToNPC;
+        GameEventsManager.Instance.miscEvents.OnInteract -= TalkedTo;
     }
     
-    private void OnTalkedToNPC(string npcName)
+    private void TalkedTo(EntityType type, string name)
     {
-        if (npcName == holyOil.name)
-        {
-            Destroy(holyOil);
-            FinishQuestStep();
-        }
+        if (name != holyOil.name || type != EntityType.QuestItem) return;
+        
+        Destroy(holyOil);
+        FinishQuestStep();
     }
 }

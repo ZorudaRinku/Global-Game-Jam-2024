@@ -7,18 +7,18 @@ public class PonderOnBridge : QuestStep
 {
     private void OnEnable()
     {
-        GameEventsManager.Instance.miscEvents.NpcInteract += OnTalkedToNPC;
+        GameEventsManager.Instance.miscEvents.OnInteract += TalkedTo;
     }
 
     private void OnDisable()
     {
         AssetBundle.UnloadAllAssetBundles(true);
-        GameEventsManager.Instance.miscEvents.NpcInteract -= OnTalkedToNPC;
+        GameEventsManager.Instance.miscEvents.OnInteract -= TalkedTo;
     }
     
-    private void OnTalkedToNPC(string npcName)
+    private void TalkedTo(EntityType type, string name)
     {
-        if (npcName != "Bridge") return;
+        if (type != EntityType.QuestItem || name != "Bridge") return;
         DialogueManager.Instance.initiateDialogue("...", Resources.Load<DialogueAsset>("Dialogue/Bridge/PonderOverBridge"));
         FinishQuestStep();
     }

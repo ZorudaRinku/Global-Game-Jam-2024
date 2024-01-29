@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2534789123025094788}
   m_Layer: 0
   m_Name: Holy Oil
-  m_TagString: NPC
+  m_TagString: QuestItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
