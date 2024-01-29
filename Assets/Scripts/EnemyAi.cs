@@ -49,7 +49,7 @@ public class EnemyAi : MonoBehaviour
          health--;
          AudioManager.instance.PlaySFX("SwordHit");
          GameEventsManager.Instance.entityEvents.HitEntity(gameObject.name);
-         GameEventsManager.Instance.playerEvents.PlayerExperienceGained(-1);
+         
          if (!(health <= 0)) return;
          
          AudioManager.instance.PlaySFX("MobDeath");
