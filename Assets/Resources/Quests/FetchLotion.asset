@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d78ae21ea5e75c445a63c9f6ea0e5bb0, type: 3}
+  m_Name: FetchLotion
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: FetchLotion
+  displayName: Fetch the lotion!
+  levelRequirement: 0
+  questPrerequisites:
+  - {fileID: 11400000, guid: 926a4460b75b647489082e3c51c5a0c0, type: 2}
+  - {fileID: 11400000, guid: d902e9fa1a8b4d045b948d599984c5c2, type: 2}
+  questStepPrefabs:
+  - {fileID: 1741971489264759242, guid: dd16f9214c2b12441b45f8ef60dfd70d, type: 3}
+  experienceReward: -99
+  startDialogue: {fileID: 11400000, guid: 1fb31d5eeacd65448bcfea478a0e606d, type: 2}
+  finishDialogue: {fileID: 11400000, guid: b9d9292e5326ff74a925dabf933734ac, type: 2}

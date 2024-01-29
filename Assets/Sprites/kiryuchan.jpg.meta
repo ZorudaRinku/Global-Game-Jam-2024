@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kiryuchan_0: 7904353378978809929
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
