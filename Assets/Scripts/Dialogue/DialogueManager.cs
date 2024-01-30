@@ -15,11 +15,13 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] float textSpeed;
     [SerializeField] Canvas dialogueBox;
     [SerializeField] Image characterPortrait;
+    [SerializeField] private Color portraitActive;
+    [SerializeField] private Color portraitInactive;
     [SerializeField] Button buttonYes;
     [SerializeField] Button buttonNo;
     [SerializeField] GameObject npcNameBox;
     [SerializeField] TextMeshProUGUI npcNameText;
-    public TextMeshProUGUI textComponent;
+    private TextMeshProUGUI textComponent;
     private int currentIndex;
     private float time;
     private int charIndex;
@@ -193,7 +195,7 @@ public class DialogueManager : MonoBehaviour
     {
         buttonYes.gameObject.SetActive(true);
         buttonNo.gameObject.SetActive(true);
-        characterPortrait.gameObject.SetActive(true);
+        characterPortrait.color = portraitActive;
         npcNameBox.gameObject.SetActive(false);
     } // showButtons
 
@@ -202,7 +204,7 @@ public class DialogueManager : MonoBehaviour
     {
         buttonYes.gameObject.SetActive(false);
         buttonNo.gameObject.SetActive(false);
-        characterPortrait.gameObject.SetActive(false);
+        characterPortrait.color = portraitInactive;
         npcNameBox.gameObject.SetActive(true);
     } // hideButtons
 
