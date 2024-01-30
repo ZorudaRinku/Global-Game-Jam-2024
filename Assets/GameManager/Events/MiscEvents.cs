@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class MiscEvents
 {
-    public event Action<string> NpcInteract;
-    public void NpcInteracted(string npcName)
+    public event Action<EntityType, string> OnInteract;
+    public void Interacted(EntityType type, string name)
     {
-        NpcInteract?.Invoke(npcName);
+        OnInteract?.Invoke(type, name);
     }
 
     public event Action<String> KilledNpc;

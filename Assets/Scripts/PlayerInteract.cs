@@ -14,9 +14,11 @@ public class PlayerInteract : MonoBehaviour
         foreach (var trigger in tempTriggers)
         {
             if (trigger.CompareTag("NPC"))
-            {
-                GameEventsManager.Instance.miscEvents.NpcInteracted(trigger.gameObject.name);
-            }
+                GameEventsManager.Instance.miscEvents.Interacted(EntityType.NPC, trigger.gameObject.name);
+            if (trigger.CompareTag("QuestItem"))
+                GameEventsManager.Instance.miscEvents.Interacted(EntityType.QuestItem, trigger.gameObject.name);
+            if (trigger.CompareTag("Enemy"))
+                GameEventsManager.Instance.miscEvents.Interacted(EntityType.Enemy, trigger.gameObject.name);
         }
     }
 

@@ -9,18 +9,18 @@ public class TalkToHarvey : QuestStep
 
     private void OnEnable()
     {
-        GameEventsManager.Instance.miscEvents.NpcInteract += OnTalkedToNPC;
+        GameEventsManager.Instance.miscEvents.OnInteract += TalkedTo;
     }
 
     private void OnDisable()
     {
-        GameEventsManager.Instance.miscEvents.NpcInteract -= OnTalkedToNPC;
+        GameEventsManager.Instance.miscEvents.OnInteract -= TalkedTo;
     }
     
-    private void OnTalkedToNPC(string npcName)
+    private void TalkedTo(EntityType type, string name)
     {
-        if (npcName != "Harvey") return;
-        DialogueManager.Instance.initiateDialogue(npcName, questStartDialogue);
+        if (type != EntityType.NPC || name != "Harvey") return;
+        DialogueManager.Instance.initiateDialogue(name, questStartDialogue);
         FinishQuestStep();
     }
 }
